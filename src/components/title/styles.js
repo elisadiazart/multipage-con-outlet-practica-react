@@ -6,7 +6,8 @@ const StyledTitle = styled.h2`
     font-size: 38px;
     line-height: 48px;
     text-align: center;
-    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    color: ${({ color }) => color};
 `
 
 

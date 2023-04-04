@@ -1,20 +1,19 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const StyledUl = styled.ul`
-    display: flex;
-
-`
+	display: flex;
+`;
 
 const StyledDiv = styled.div`
-    display: flex;
-    justify-content: space-between;
-    width: 100vw;
-    padding: 3rem 2rem 1rem 2rem;
-    align-items: center
+	display: flex;
+	justify-content: space-between;
+	width: 100vw;
+	padding: 3rem 2rem 1rem 2rem;
+	align-items: center;
+	position: relative;
+	z-index: 10;
+`;
 
-`
+const StyledNav = styled.nav``;
 
-const StyledNav = styled.nav`
-`
-
-export {StyledUl, StyledDiv, StyledNav}
+export { StyledUl, StyledDiv, StyledNav };

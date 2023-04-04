@@ -26,7 +26,6 @@ const GlobalStyles = createGlobalStyle`
         margin-right: auto;
         font-family: 'Public Sans', sans-serif;
         color: ${COLORS.color};
-        overflow: hidden;
         background-color: ${COLORS.bgcolor}
     }
     *{
