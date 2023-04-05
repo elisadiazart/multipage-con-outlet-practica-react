@@ -1,8 +1,9 @@
 import { v4 } from "uuid"
+import BorderButton from "../components/border-button/borderButton"
 import Check from "../components/check/Check"
 import Title from "../components/title/Title"
 import { PRICINGS } from "../constants/pricings"
-import { StyledMainPricing, StyledMainTop } from "./styles"
+import { StyledMainPricing, StyledMainTop, StyledChecksContainer, StyledCheckContainer, StyledPrice, StyledPriceTitle } from "./styles"
 
 const Pricing = () => {
     return <StyledMainPricing>
@@ -10,15 +11,18 @@ const Pricing = () => {
         <Title text='Pricing'/>
         <div>
             {PRICINGS.map(card => (
-                <div key={v4()}>
-                <h3>{card.title}</h3>
-                <p>{card.price}</p>
-                <div>
+                <div  key={v4()}>
+                <StyledChecksContainer>
+                <StyledPriceTitle>{card.title}</StyledPriceTitle>
+                <StyledPrice>{card.price}</StyledPrice>
+                <StyledCheckContainer>
                     {Object.values(card.features).map(value => (
                         <Check key={v4()} pseudo={value[1]}text={value[0]}/>
                     ))}
                     
-                </div>
+                </StyledCheckContainer>
+                </StyledChecksContainer>
+                <BorderButton text='Request Access' border='#36536B'/>
                 </div>
             ))}
         </div>
