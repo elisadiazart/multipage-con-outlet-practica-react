@@ -7,6 +7,7 @@ const StyledCheck = styled.div`
 	position: relative;
 	text-align: left;
 	color: #92a3b2;
+	margin-bottom: 0.5rem;
 
 	${props => {
 		switch (props.pseudo) {
