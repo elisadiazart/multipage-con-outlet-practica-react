@@ -1,5 +1,5 @@
 import Menu from "../menu/Menu"
-import { StyledUl, StyledDiv, StyledNav } from "./styles"
+import { StyledUl, StyledDiv, StyledNav, StyledMenuIcon } from "./styles"
 import { useState } from 'react';
 
 const Nav = () =>{
@@ -11,7 +11,7 @@ const Nav = () =>{
                 <a href="/"><img src="/shared/desktop/logo.svg" alt="logo" /></a>
             </li>
             <li>
-                <img src="/shared/mobile/menu.svg" alt="menu"  onClick={() => setMenu(open, setOpen)} />
+                <StyledMenuIcon src="/shared/mobile/menu.svg" alt="menu"  onClick={() => setMenu(open, setOpen)} />
             </li>
             </StyledDiv>
             <Menu translate= {open ? '0' : '100vw'} HandleClick= {() => setMenu(open, setOpen)} />

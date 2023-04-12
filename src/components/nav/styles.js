@@ -2,6 +2,11 @@ import styled from 'styled-components';
 
 const StyledUl = styled.ul`
 	display: flex;
+	@media screen and (min-width: 640px) {
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 2rem 1rem;
+	}
 `;
 
 const StyledDiv = styled.div`
@@ -12,8 +17,20 @@ const StyledDiv = styled.div`
 	align-items: center;
 	position: relative;
 	z-index: 10;
+	@media screen and (min-width: 640px) {
+		display: flex;
+		width: 200px;
+		padding: 0;
+		align-items: center;
+	}
+`;
+
+const StyledMenuIcon = styled.img`
+	@media screen and (min-width: 640px) {
+		display: none;
+	}
 `;
 
 const StyledNav = styled.nav``;
 
-export { StyledUl, StyledDiv, StyledNav };
+export { StyledUl, StyledDiv, StyledNav, StyledMenuIcon };

@@ -1,10 +1,11 @@
 import SmallTitle from "../components/small-title/SmallTitle"
 import Text from "../components/text/Text"
 import Title from "../components/title/Title"
-import { StyledAboutContainer, StyledAboutDataContainer, StyledAboutImage, StyledData } from "./styles"
+import { StyledAboutContainer, StyledAboutDataContainer, StyledAboutImage, StyledData, StyledMainTop } from "./styles"
 
 const About = () => {
     return <main>
+    <StyledMainTop></StyledMainTop>
     <StyledAboutContainer>
         <Title text='We empower innovators
     by delivering access to the financial system'/>

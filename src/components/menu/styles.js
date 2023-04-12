@@ -8,6 +8,15 @@ const StyledDiv = styled.div`
 	width: 80%;
 	right: 0;
 	padding: 3.5rem 2rem;
+	@media screen and (min-width: 640px) {
+		position: static;
+		background-color: transparent;
+		padding: 0;
+		width: auto;
+		display: flex;
+		height: auto;
+		align-items: center;
+	}
 `;
 
 const StyledCross = styled.img`
@@ -19,6 +28,9 @@ const StyledCross = styled.img`
 	padding-left: calc(100% - 22px - 1rem);
 	border-bottom: 1px solid #404b56;
 	margin-bottom: 3rem;
+	@media screen and (min-width: 640px) {
+		display: none;
+	}
 `;
 
 const StyledLi = styled.li`
@@ -27,6 +39,11 @@ const StyledLi = styled.li`
 	color: #fbfcfe;
 	padding: 1rem;
 	font-size: 1.3rem;
+	@media screen and (min-width: 640px) {
+		font-size: 1rem;
+		color: #36536b;
+		font-weight: 800;
+	}
 `;
 
 const StyledButton = styled.button`
@@ -44,6 +61,10 @@ const StyledButton = styled.button`
 	font-weight: 600;
 	font-size: 1rem;
 	font-family: 'Public Sans', sans-serif;
+	@media screen and (min-width: 640px) {
+		margin-top: 0;
+		margin-left: 3rem;
+	}
 `;
 
 const StyledContainer = styled.div`
@@ -56,6 +77,12 @@ const StyledContainer = styled.div`
 	overflow: hidden;
 	transform: translate(${({ translate }) => translate});
 	transition: transform 0.3s;
+	@media screen and (min-width: 640px) {
+		transform: translate(0);
+		height: auto;
+		width: auto;
+		position: static;
+	}
 `;
 
 export { StyledDiv, StyledCross, StyledLi, StyledButton, StyledContainer };

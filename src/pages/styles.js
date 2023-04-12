@@ -78,13 +78,6 @@ const StyledData = styled.p`
 	margin-bottom: 2rem;
 `;
 
-const StyledInput = styled.input`
-	border: none;
-	background-color: transparent;
-	padding: 0.5rem;
-	border-bottom: 1px solid #b4c1cc;
-`;
-
 const StyledForm = styled.form`
 	display: flex;
 	flex-direction: column;
@@ -92,12 +85,47 @@ const StyledForm = styled.form`
 	color: #92a3b1;
 `;
 
+const StyledMain = styled.main`
+	margin: 2rem;
+`;
 const StyledLabel = styled.label`
 	padding: 0 1rem;
 `;
 
-const StyledMain = styled.main`
-	margin: 2rem;
+const StyledInput = styled.textarea`
+	border: none;
+	background-color: transparent;
+	padding: 0.5rem;
+	border-bottom: 1px solid #b4c1cc;
+	max-width: 100%;
+	height: 6rem;
+	max-height: 20rem;
+`;
+
+const StyledCheckbox = styled.div`
+	display: flex;
+	gap: 1.5rem;
+	align-items: center;
+	margin: 1.5rem 0;
+	color: #36536b;
+`;
+
+const StyledCheckboxBox = styled.input``;
+
+const StyledSubmit = styled.input`
+	background-color: transparent;
+	border: 1px solid #36536b;
+	padding: 1rem;
+	font-family: 'Public Sans', sans-serif;
+	font-weight: 800;
+	font-size: 1rem;
+	color: #36536b;
+	width: 200px;
+	border-radius: 40px;
+`;
+
+const StyledDiv = styled.div`
+	margin-top: 8rem;
 `;
 
 export {
@@ -111,8 +139,12 @@ export {
 	StyledAboutImage,
 	StyledAboutDataContainer,
 	StyledData,
-	StyledInput,
 	StyledForm,
+	StyledMain,
+	StyledInput,
 	StyledLabel,
-	StyledMain
+	StyledCheckbox,
+	StyledCheckboxBox,
+	StyledSubmit,
+	StyledDiv
 };
