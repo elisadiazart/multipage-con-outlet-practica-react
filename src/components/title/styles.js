@@ -8,6 +8,10 @@ const StyledTitle = styled.h2`
 	text-align: center;
 	padding-bottom: 2rem;
 	color: ${({ color }) => color};
+	@media screen and (min-width: 1024px) {
+		text-align: left;
+		font-size: 3rem;
+	}
 `;
 
 export { StyledTitle };

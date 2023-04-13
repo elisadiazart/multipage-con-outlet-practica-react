@@ -10,6 +10,13 @@ const StyledDiv = styled.div`
 		margin: auto;
 		margin-bottom: 8rem;
 	}
+	@media screen and (min-width: 1024px) {
+		display: flex;
+		width: 900px;
+		justify-content: space-between;
+		margin-bottom: 4rem;
+		padding: 0;
+	}
 `;
 
 const StyledNav = styled.nav`
@@ -51,6 +58,11 @@ const StyledUl = styled.ul`
 		background-image: none;
 		gap: 4rem;
 	}
+	@media screen and (min-width: 1024px) {
+		justify-content: space-between;
+		width: 100%;
+		padding-left: 4rem;
+	}
 `;
 
 const StyledLi = styled.li`
@@ -88,6 +100,15 @@ const StyledLiContainer = styled.div`
 	}
 `;
 
+const StyledDivFooter = styled.div`
+	@media screen and (min-width: 1024px) {
+		display: flex;
+		width: 900px;
+		margin: auto;
+		justify-content: space-between;
+	}
+`;
+
 export {
 	StyledFooter,
 	StyledNav,
@@ -96,5 +117,6 @@ export {
 	StyledUl,
 	StyledLi,
 	StyledIconsContainer,
-	StyledLiContainer
+	StyledLiContainer,
+	StyledDivFooter
 };

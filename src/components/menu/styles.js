@@ -17,6 +17,9 @@ const StyledDiv = styled.div`
 		height: auto;
 		align-items: center;
 	}
+	@media screen and (min-width: 1024px) {
+		justify-content: space-between;
+	}
 `;
 
 const StyledCross = styled.img`
@@ -66,6 +69,10 @@ const StyledButton = styled.button`
 		margin-left: 1rem;
 		min-width: 200px;
 	}
+	@media screen and (min-width: 1024px) {
+		width: auto;
+		margin: 0;
+	}
 `;
 
 const StyledContainer = styled.div`
@@ -84,6 +91,23 @@ const StyledContainer = styled.div`
 		width: auto;
 		position: static;
 	}
+	@media screen and (min-width: 1024px) {
+		width: 100%;
+		justify-content: space-between;
+	}
 `;
 
-export { StyledDiv, StyledCross, StyledLi, StyledButton, StyledContainer };
+const StyledLiContainer = styled.div`
+	display: flex;
+	@media screen and (min-width: 1024px) {
+	}
+`;
+
+export {
+	StyledDiv,
+	StyledCross,
+	StyledLi,
+	StyledButton,
+	StyledContainer,
+	StyledLiContainer
+};

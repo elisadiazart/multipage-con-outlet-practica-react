@@ -20,6 +20,20 @@ const StyledText = styled.p`
 			}
 		}};
 	}
+	@media screen and (min-width: 1020px) {
+		display: block;
+
+		${props => {
+			switch (props.leftPc) {
+				case 'true':
+					return css`
+					text-align: left;
+					
+					}
+				`;
+			}
+		}};
+	}
 `;
 
 const StyledSpan = styled.span`

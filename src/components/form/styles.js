@@ -7,6 +7,10 @@ const StyledForm = styled.form`
 	margin-bottom: 2rem;
 	@media screen and (min-width: 640px) {
 	}
+	@media screen and (min-width: 1024px) {
+		position: relative;
+		width: auto;
+	}
 `;
 
 const StyledInputText = styled.input`
@@ -21,6 +25,10 @@ const StyledInputText = styled.input`
 	color: #99a7b4;
 	@media screen and (min-width: 640px) {
 		position: relative;
+	}
+	@media screen and (min-width: 1024px) {
+		width: auto;
+		padding-right: 14rem;
 	}
 `;
 
@@ -38,6 +46,10 @@ const StyledSubmit = styled.input`
 	@media screen and (min-width: 640px) {
 		position: absolute;
 		right: 7rem;
+	}
+	@media screen and (min-width: 1024px) {
+		position: absolute;
+		right: 0rem;
 	}
 `;
 

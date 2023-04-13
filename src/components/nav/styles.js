@@ -7,6 +7,10 @@ const StyledUl = styled.ul`
 		justify-content: space-between;
 		padding: 2rem 1rem;
 	}
+	@media screen and (min-width: 1024px) {
+		justify-content: space-between;
+		padding: 2rem 0;
+	}
 `;
 
 const StyledDiv = styled.div`
@@ -31,6 +35,11 @@ const StyledMenuIcon = styled.img`
 	}
 `;
 
-const StyledNav = styled.nav``;
+const StyledNav = styled.nav`
+	@media screen and (min-width: 1024px) {
+		width: 900px;
+		margin: auto;
+	}
+`;
 
 export { StyledUl, StyledDiv, StyledNav, StyledMenuIcon };

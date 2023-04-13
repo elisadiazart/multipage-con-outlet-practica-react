@@ -16,6 +16,9 @@ const StyledMainTop = styled.div`
 	@media screen and (min-width: 720px) {
 		background-position: bottom 40px left 500px;
 	}
+	@media screen and (min-width: 1024px) {
+		background-position: bottom 100px right -150px;
+	}
 `;
 
 const StyledChecksContainer = styled.div`
@@ -168,6 +171,20 @@ const StyledPricings = styled.div`
 		width: 90%;
 		max-width: 900px;
 	}
+	@media screen and (min-width: 640px) {
+		margin: 0;
+	}
+	@media screen and (min-width: 1024px) {
+		justify-content: space-between;
+		width: 100%;
+	}
+`;
+
+const StyledPricingsContainer = styled.div`
+	@media screen and (min-width: 1024px) {
+		width: 900px;
+		margin: auto;
+	}
 `;
 
 const StyledTitleContainer = styled.div`
@@ -221,5 +238,6 @@ export {
 	StyledPricings,
 	StyledTitleContainer,
 	StyledTextContainer,
-	StyledTitle
+	StyledTitle,
+	StyledPricingsContainer
 };

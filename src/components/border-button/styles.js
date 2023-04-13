@@ -11,6 +11,10 @@ const StyledButton = styled.button`
 	margin: 2rem auto;
 	display: flex;
 	font-weight: 700;
+	@media screen and (min-width: 1024px) {
+		margin: 0;
+		margin-top: 2rem;
+	}
 `;
 
 export { StyledButton };
