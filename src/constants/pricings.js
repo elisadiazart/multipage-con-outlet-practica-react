@@ -2,6 +2,7 @@ export const PRICINGS = [
 	{
 		price: '$0.00',
 		title: 'Free Plan',
+		text: 'Build and test using our core set of products with up to 100 API requests ',
 		features: {
 			0: ['Transactions', 'true'],
 			1: ['Auth', 'true'],
@@ -15,6 +16,7 @@ export const PRICINGS = [
 	{
 		price: '$249.00',
 		title: 'Basic Plan',
+		text: 'Launch your project with unlimited requests and no contractual minimums ',
 		features: {
 			0: ['Transactions', 'true'],
 			1: ['Auth', 'true'],
@@ -28,6 +30,7 @@ export const PRICINGS = [
 	{
 		price: '$499.00',
 		title: 'Premium Plan',
+		text: 'Get tailored solutions, volume pricing, and dedicated support for your team ',
 		features: {
 			0: ['Transactions', 'true'],
 			1: ['Auth', 'true'],

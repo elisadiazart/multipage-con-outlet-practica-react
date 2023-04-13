@@ -13,6 +13,9 @@ const StyledMainTop = styled.div`
 	position: absolute;
 	top: 0;
 	padding-top: 20rem;
+	@media screen and (min-width: 720px) {
+		background-position: bottom 40px left 500px;
+	}
 `;
 
 const StyledChecksContainer = styled.div`
@@ -21,6 +24,10 @@ const StyledChecksContainer = styled.div`
 	margin: 0 2rem;
 	padding-bottom: 1rem;
 	border-bottom: 1px solid #bfcbd5;
+	@media screen and (min-width: 640px) {
+		margin: 0;
+		min-width: 250px;
+	}
 `;
 
 const StyledCheckContainer = styled.div`
@@ -40,6 +47,9 @@ const StyledPrice = styled.p`
 	font-family: 'DM Serif Display', serif;
 	padding-bottom: 1rem;
 	border-bottom: 1px solid #bfcbd5;
+	@media screen and (min-width: 640px) {
+		margin-top: auto;
+	}
 `;
 
 const StyledPriceTitle = styled.h3`
@@ -62,12 +72,25 @@ const StyledAboutImage = styled.div`
 	background-image: url('/about/mobile/image-team-members.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
+	@media screen and (min-width: 640px) {
+		width: 100%;
+		height: 300px;
+		background-image: url('/about/tablet/image-team-members.jpg');
+		background-size: contain;
+	}
 `;
 
 const StyledAboutDataContainer = styled.div`
 	border-top: 1px solid #bfcbd5;
 	border-bottom: 1px solid #bfcbd5;
 	padding: 1rem 0;
+	@media screen and (min-width: 640px) {
+		display: flex;
+		justify-content: space-between;
+		padding-right: 200px;
+		padding-top: 2rem;
+		margin-bottom: 6rem;
+	}
 `;
 
 const StyledData = styled.p`
@@ -76,6 +99,9 @@ const StyledData = styled.p`
 	color: #ba4270;
 	font-size: 3.7rem;
 	margin-bottom: 2rem;
+	@media screen and (min-width: 640px) {
+		margin: 0;
+	}
 `;
 
 const StyledForm = styled.form`
@@ -83,6 +109,11 @@ const StyledForm = styled.form`
 	flex-direction: column;
 	gap: 1rem;
 	color: #92a3b1;
+
+	@media screen and (min-width: 640px) {
+		width: 450px;
+		margin: auto;
+	}
 `;
 
 const StyledMain = styled.main`
@@ -128,6 +159,46 @@ const StyledDiv = styled.div`
 	margin-top: 8rem;
 `;
 
+const StyledPricings = styled.div`
+	@media screen and (min-width: 720px) {
+		display: flex;
+		margin: auto;
+		justify-content: center;
+		gap: 0.5rem;
+		width: 90%;
+		max-width: 900px;
+	}
+`;
+
+const StyledTitleContainer = styled.div`
+	@media screen and (min-width: 640px) {
+		width: 500px;
+		margin: auto;
+		margin-bottom: 2rem;
+	}
+`;
+
+const StyledTextContainer = styled.div`
+	@media screen and (min-width: 640px) {
+		display: flex;
+		align-items: flex-start;
+		margin-bottom: 2rem;
+	}
+`;
+
+const StyledTitle = styled.h3`
+	font-family: 'DM Serif Display', serif;
+	font-weight: 400;
+	font-size: 2.375rem;
+	line-height: 48px;
+	text-align: center;
+	padding-bottom: 2rem;
+	color: #647b8e;
+	@media screen and (min-width: 640px) {
+		font-size: 1.7rem;
+	}
+`;
+
 export {
 	StyledMainPricing,
 	StyledMainTop,
@@ -146,5 +217,9 @@ export {
 	StyledCheckbox,
 	StyledCheckboxBox,
 	StyledSubmit,
-	StyledDiv
+	StyledDiv,
+	StyledPricings,
+	StyledTitleContainer,
+	StyledTextContainer,
+	StyledTitle
 };

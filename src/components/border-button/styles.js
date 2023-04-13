@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const StyledButton = styled.button`
 	color: ${({ border }) => border};
-	border: 1px solid ${({ border }) => border};
+	border: 1px solid ${({ color }) => color};
 	background-color: transparent;
 	border-radius: 24px;
 	padding: 1rem 2rem;
@@ -10,7 +10,6 @@ const StyledButton = styled.button`
 	font-size: 1rem;
 	margin: 2rem auto;
 	display: flex;
-	color: #36536b;
 	font-weight: 700;
 `;
 

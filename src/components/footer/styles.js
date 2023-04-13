@@ -5,10 +5,25 @@ const StyledFooter = styled.footer``;
 const StyledDiv = styled.div`
 	padding: 0 2rem;
 	margin-bottom: 6rem;
+	@media screen and (min-width: 640px) {
+		width: 570px;
+		margin: auto;
+		margin-bottom: 8rem;
+	}
 `;
 
 const StyledNav = styled.nav`
 	background-color: #1b262f;
+	@media screen and (min-width: 640px) {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 1.6rem 2.5rem;
+		background-image: url(/shared/desktop/bg-pattern-circle.svg);
+		background-repeat: no-repeat;
+		background-size: 550px;
+		background-position: 190% 5%;
+	}
 `;
 
 const StyledLogo = styled.img`
@@ -16,6 +31,10 @@ const StyledLogo = styled.img`
 	margin: auto;
 	width: 160px;
 	margin-bottom: 4rem;
+	@media screen and (min-width: 640px) {
+		margin: 0;
+		padding: 0;
+	}
 `;
 
 const StyledUl = styled.ul`
@@ -25,6 +44,13 @@ const StyledUl = styled.ul`
 	background-image: url(/shared/desktop/bg-pattern-circle.svg);
 	background-repeat: no-repeat;
 	background-position: top center;
+	@media screen and (min-width: 640px) {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		background-image: none;
+		gap: 4rem;
+	}
 `;
 
 const StyledLi = styled.li`
@@ -35,6 +61,9 @@ const StyledLi = styled.li`
 	font-size: 1.2rem;
 	opacity: 0.7;
 	letter-spacing: 0.5px;
+	@media screen and (min-width: 640px) {
+		font-size: 1rem;
+	}
 `;
 
 const StyledIconsContainer = styled.div`
@@ -44,6 +73,19 @@ const StyledIconsContainer = styled.div`
 	margin: auto;
 	margin-top: 2rem;
 	padding-bottom: 4rem;
+	@media screen and (min-width: 640px) {
+		margin: 0;
+		padding: 0;
+	}
+`;
+
+const StyledLiContainer = styled.div`
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	@media screen and (min-width: 640px) {
+		flex-direction: row;
+	}
 `;
 
 export {
@@ -53,5 +95,6 @@ export {
 	StyledLogo,
 	StyledUl,
 	StyledLi,
-	StyledIconsContainer
+	StyledIconsContainer,
+	StyledLiContainer
 };

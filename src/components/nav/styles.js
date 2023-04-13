@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const StyledUl = styled.ul`
 	display: flex;
-	@media screen and (min-width: 640px) {
+	@media screen and (min-width: 720px) {
 		flex-direction: row;
 		justify-content: space-between;
 		padding: 2rem 1rem;
@@ -17,7 +17,7 @@ const StyledDiv = styled.div`
 	align-items: center;
 	position: relative;
 	z-index: 10;
-	@media screen and (min-width: 640px) {
+	@media screen and (min-width: 720px) {
 		display: flex;
 		width: 200px;
 		padding: 0;
@@ -26,7 +26,7 @@ const StyledDiv = styled.div`
 `;
 
 const StyledMenuIcon = styled.img`
-	@media screen and (min-width: 640px) {
+	@media screen and (min-width: 720px) {
 		display: none;
 	}
 `;

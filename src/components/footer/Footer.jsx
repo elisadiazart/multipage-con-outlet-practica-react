@@ -1,6 +1,6 @@
 import Form from "../form/Form"
 import Title from "../title/Title"
-import { StyledFooter, StyledNav, StyledDiv, StyledLogo, StyledUl,StyledLi, StyledIconsContainer } from "./styles"
+import { StyledFooter, StyledNav, StyledDiv, StyledLogo, StyledUl,StyledLi, StyledIconsContainer, StyledLiContainer } from "./styles"
 
 const Footer = () => {
     return <StyledFooter>
@@ -11,9 +11,11 @@ const Footer = () => {
         <StyledNav>
             <StyledLogo src="/shared/desktop/logo-white.svg" alt="logo" />
             <StyledUl>
-                <StyledLi><a href="/pricing">Pricing</a></StyledLi>
-                <StyledLi><a href="/about">About</a></StyledLi>
-                <StyledLi><a href="/contact">Contact</a></StyledLi>
+                <StyledLiContainer>
+                    <StyledLi><a href="/pricing">Pricing</a></StyledLi>
+                    <StyledLi><a href="/about">About</a></StyledLi>
+                    <StyledLi><a href="/contact">Contact</a></StyledLi>
+                </StyledLiContainer>
                 <StyledIconsContainer>
                     <img src="/shared/desktop/facebook.svg" alt="" />
                     <img src="/shared/desktop/twitter.svg" alt="" />

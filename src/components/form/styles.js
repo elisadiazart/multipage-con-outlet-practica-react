@@ -5,6 +5,8 @@ const StyledForm = styled.form`
 	flex-direction: column;
 	gap: 1rem;
 	margin-bottom: 2rem;
+	@media screen and (min-width: 640px) {
+	}
 `;
 
 const StyledInputText = styled.input`
@@ -17,6 +19,9 @@ const StyledInputText = styled.input`
 	font-size: 1rem;
 	font-family: 'Public Sans', sans-serif;
 	color: #99a7b4;
+	@media screen and (min-width: 640px) {
+		position: relative;
+	}
 `;
 
 const StyledSubmit = styled.input`
@@ -29,6 +34,11 @@ const StyledSubmit = styled.input`
 	font-weight: 700;
 	font-size: 1rem;
 	font-family: 'Public Sans', sans-serif;
+	cursor: pointer;
+	@media screen and (min-width: 640px) {
+		position: absolute;
+		right: 7rem;
+	}
 `;
 
 export { StyledForm, StyledInputText, StyledSubmit };

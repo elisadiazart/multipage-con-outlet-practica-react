@@ -60,6 +60,9 @@ const StyledCard = styled.div`
 	flex-direction: column;
 	align-items: center;
 	margin: 4rem 4rem;
+	@media screen and (min-width: 640px) {
+		margin: 0;
+	}
 `;
 
 const StyledTitle = styled.h3`
@@ -68,6 +71,19 @@ const StyledTitle = styled.h3`
 
 const StyledCards = styled.div`
 	padding: 2rem 0;
+	@media screen and (min-width: 640px) {
+		display: flex;
+		gap: 2rem;
+		margin: 0 2rem;
+		margin-bottom: 6rem;
+	}
+`;
+
+const StyledTextContainer = styled.div`
+	@media screen and (min-width: 640px) {
+		width: 500px;
+		margin: auto;
+	}
 `;
 
 export {
@@ -82,5 +98,6 @@ export {
 	StyledMobiletImage,
 	StyledCard,
 	StyledTitle,
-	StyledCards
+	StyledCards,
+	StyledTextContainer
 };
