@@ -23,12 +23,18 @@ const About = () => {
     <StyledAboutImage ></StyledAboutImage>
     <StyledAboutContainer>
         <StyledAboutDataContainer>
+            <div>
             <Text text='Team Members' color='#6C8294' displayIpad='none'/>
             <StyledData>300+</StyledData>
+            </div>
+            <div>
             <Text text='Offices in the US' color='#6C8294' displayIpad='none'/>
             <StyledData>3</StyledData>
+            </div>
+            <div>
             <Text text='Transactions analyzed' color='#6C8294' displayIpad='none'/>
             <StyledData>10M+</StyledData>
+            </div>
         </StyledAboutDataContainer>
         <StyledTextContainer>
         <SmallTitle text='The Culture'/>

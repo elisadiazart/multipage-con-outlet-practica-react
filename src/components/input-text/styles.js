@@ -9,6 +9,9 @@ const StyledInput = styled.input`
 	background-color: transparent;
 	padding: 0.5rem;
 	border-bottom: 1px solid #b4c1cc;
+	@media screen and (min-width: 1024px) {
+		padding: 0;
+	}
 `;
 
 export { StyledInput, StyledLabel };

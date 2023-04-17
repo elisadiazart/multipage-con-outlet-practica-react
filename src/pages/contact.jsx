@@ -3,7 +3,7 @@ import Brands from "../components/brands/Brands"
 import Input from "../components/input-text/Input"
 import Title from "../components/title/Title"
 import { CONTACTINFO } from "../constants/contact"
-import { StyledForm, StyledInput, StyledLabel, StyledMain, StyledCheckbox, StyledCheckboxBox,StyledSubmit, StyledDiv, StyledMainTop, StyledTitleContainer, StyledTitle } from "./styles"
+import { StyledForm, StyledInput, StyledLabel, StyledMain, StyledCheckbox, StyledCheckboxBox,StyledSubmit, StyledDiv, StyledMainTop, StyledTitleContainer, StyledTitle, StyledContactContainer } from "./styles"
 
 const Contact = () => {
     return <StyledMain>
@@ -11,6 +11,7 @@ const Contact = () => {
         <StyledTitleContainer>
         <Title text='Submit a help request and we’ll get in touch shortly.'/>
         </StyledTitleContainer>
+        <StyledContactContainer>
         <StyledForm>
             {CONTACTINFO.map(input => (
                 <Input key={v4()} id={input[1]} text={input[0]}/>
@@ -24,11 +25,12 @@ const Contact = () => {
             <StyledSubmit type="submit" value='Submit'/>
         </StyledForm>
         <StyledDiv>
-        <StyledTitleContainer>
-        <StyledTitle>Join the thousands of innovators already building with us</StyledTitle>
+        <StyledTitleContainer contact='true'>
+        <StyledTitle  >Join the thousands of innovators already building with us</StyledTitle>
         </StyledTitleContainer>
         <Brands color='dark' marginTop='-4rem'/>
         </StyledDiv>
+        </StyledContactContainer>
     </StyledMain>
 }
 

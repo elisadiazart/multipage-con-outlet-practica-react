@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 const StyledMainPricing = styled.main`
 	margin-bottom: 8rem;
@@ -79,7 +79,12 @@ const StyledAboutImage = styled.div`
 		width: 100%;
 		height: 300px;
 		background-image: url('/about/tablet/image-team-members.jpg');
-		background-size: contain;
+		background-size: 100%;
+	}
+	@media screen and (min-width: 1024px) {
+		width: 100%;
+		background-size: 100%;
+		background-position: center;
 	}
 `;
 
@@ -94,6 +99,12 @@ const StyledAboutDataContainer = styled.div`
 		padding-top: 2rem;
 		margin-bottom: 6rem;
 	}
+	@media screen and (min-width: 1024px) {
+		width: 900px;
+		margin: auto;
+		padding: 1rem 0;
+		margin-bottom: 6rem;
+	}
 `;
 
 const StyledData = styled.p`
@@ -104,6 +115,9 @@ const StyledData = styled.p`
 	margin-bottom: 2rem;
 	@media screen and (min-width: 640px) {
 		margin: 0;
+	}
+	@media screen and (min-width: 1024px) {
+		text-align: left;
 	}
 `;
 
@@ -160,6 +174,14 @@ const StyledSubmit = styled.input`
 
 const StyledDiv = styled.div`
 	margin-top: 8rem;
+	@media screen and (min-width: 1024px) {
+		width: auto;
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+		width: 45%;
+	}
 `;
 
 const StyledPricings = styled.div`
@@ -193,12 +215,34 @@ const StyledTitleContainer = styled.div`
 		margin: auto;
 		margin-bottom: 2rem;
 	}
+	@media screen and (min-width: 1024px) {
+		width: 900px;
+		margin: auto;
+		padding-right: 18rem;
+		margin-bottom: 2rem;
+		${props => {
+			switch (props.contact) {
+				case 'true':
+					return css`
+					padding-right: 0;
+					width: auto;
+					margin-bottom: 0;
+					}
+				`;
+			}
+		}}
+	}
 `;
 
 const StyledTextContainer = styled.div`
 	@media screen and (min-width: 640px) {
 		display: flex;
 		align-items: flex-start;
+		margin-bottom: 2rem;
+	}
+	@media screen and (min-width: 1024px) {
+		width: 900px;
+		margin: auto;
 		margin-bottom: 2rem;
 	}
 `;
@@ -213,6 +257,21 @@ const StyledTitle = styled.h3`
 	color: #647b8e;
 	@media screen and (min-width: 640px) {
 		font-size: 1.7rem;
+	}
+	@media screen and (min-width: 1024px) {
+		text-align: left;
+		padding-bottom: 1.5rem;
+	}
+`;
+
+const StyledContactContainer = styled.div`
+	@media screen and (min-width: 1024px) {
+		display: flex;
+		width: 900px;
+		margin: auto;
+		align-items: center;
+		gap: 4rem;
+		margin-bottom: 8rem;
 	}
 `;
 
@@ -239,5 +298,6 @@ export {
 	StyledTitleContainer,
 	StyledTextContainer,
 	StyledTitle,
-	StyledPricingsContainer
+	StyledPricingsContainer,
+	StyledContactContainer
 };

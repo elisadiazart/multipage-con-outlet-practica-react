@@ -12,8 +12,9 @@ const StyledBrands = styled.div`
 	}
 	@media screen and (min-width: 1024px) {
 		margin-top: 0;
-		gap: 1rem;
+		gap: 2rem;
 		padding: 0;
+		width: 450px;
 	}
 `;
 
@@ -24,7 +25,7 @@ const StyledLogo = styled.img`
 		padding: 1.5rem 0;
 	}
 	@media screen and (min-width: 1024px) {
-		padding: 1rem 1.5rem;
+		padding: 0;
 	}
 `;
 
